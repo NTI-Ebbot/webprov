@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo"></p>
+    <img src="bild.png" alt="har ingen bild" id="image">
+
+    <!-- 5 -->
+    <form>
+        <input type="text" id="text">
+        <input type="button" onclick="alert(document.getElementById(`text`).value)">
+    </form>
+</body>
+<script>
+
+    //1
+    function add(num1, num2){
+        return(num1 + num2);
+    }
+
+    console.log(add(1, 2));
+    //2
+    document.getElementById("demo").innerHTML = "Hej";
+
+    //3
+    document.getElementById("image").src = "bild.jpg"
+
+    //4
+    function arraySubtract(numArray){
+        newArray = [];
+        for(i of numArray){
+            newArray.push(numArray[i-1] - 1);
+        }
+        return(newArray)
+    }
+     console.log(arraySubtract([1,2,3,4]));
+
+
+
+
+
+
+</script>
+</html>
